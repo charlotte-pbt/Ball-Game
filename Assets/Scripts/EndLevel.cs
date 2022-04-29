@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EndLevel : MonoBehaviour
+{
+    public GameManager gameManager;
+    
+    private void OnCollisionEnter(Collision other) 
+    {
+        gameManager.EndLevel();
+    }
+}
